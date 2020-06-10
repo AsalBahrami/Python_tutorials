@@ -30,8 +30,8 @@ array=np.array([[2017,4,21],[2017,9,0],[2016,70,19],[1998,182,3]])
 # is not already defined in python(as function for example)
 # so DO NOT write list because list() is already a function in python.
 def give_access(my_list):
-    row_number = [int(input("Enter number of row"))]
-    column_number = [int(input("Enter number of column"))]
+    row_number = int(input("Enter number of row"))
+    column_number = int(input("Enter number of column"))
     # check if the length of given request matches the length of array
     if row_number or column_number in len(my_list):
         required_array = my_list[row_number, column_number]
